@@ -1,0 +1,166 @@
+{
+  "design_system": {
+    "theme": "Light",
+    "archetype": "Archetype 4 (Swiss & High-Contrast)",
+    "domain": "Review & Rating Platform",
+    "core_principles": [
+      "Objective truth and clarity above all else.",
+      "Tension through high-contrast grayscale and singular bold color accents.",
+      "Grid-based structural layout. Expose the skeleton.",
+      "Never use full-screen gradients. Texture and solid blocks over gloss."
+    ],
+    "colors": {
+      "background": {
+        "primary": "#FFFFFF",
+        "secondary": "#FAFAFA",
+        "tertiary": "#F4F4F5",
+        "glass": "bg-white/80 backdrop-blur-xl"
+      },
+      "text": {
+        "primary": "#09090B",
+        "secondary": "#52525B",
+        "tertiary": "#71717A",
+        "inverse": "#FFFFFF"
+      },
+      "brand": {
+        "primary": "#0055FF",
+        "primary_hover": "#0044CC",
+        "accent": "#0055FF"
+      },
+      "feedback": {
+        "success": "#10B981",
+        "warning": "#F59E0B",
+        "error": "#EF4444",
+        "rating_excellent": "#10B981",
+        "rating_average": "#F59E0B",
+        "rating_poor": "#EF4444"
+      },
+      "border": {
+        "subtle": "#E4E4E7",
+        "strong": "#18181B"
+      }
+    },
+    "typography": {
+      "heading_font": "Cabinet Grotesk, sans-serif",
+      "body_font": "Inter, sans-serif",
+      "rules": [
+        "Headings must use 'tracking-tight' or 'tracking-tighter'.",
+        "Never use Inter for headings.",
+        "Overlines/Labels must be uppercase, tiny, wide spacing (tracking-[0.2em]).",
+        "Line height: leading-none for headings, leading-relaxed for body.",
+        "No generic bolding; use font-black for extreme contrast, font-light for elegance."
+      ],
+      "scale": {
+        "h1": "text-4xl sm:text-5xl lg:text-6xl font-black tracking-tighter",
+        "h2": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight",
+        "h3": "text-xl sm:text-2xl font-bold tracking-tight",
+        "h4": "text-lg sm:text-xl font-semibold",
+        "body": "text-base leading-relaxed text-zinc-600",
+        "body_small": "text-sm text-zinc-500",
+        "label": "text-xs font-bold uppercase tracking-[0.2em]"
+      }
+    },
+    "spacing_and_layout": {
+      "philosophy": "Generous Spacing. Use p-6, p-8, p-12 extensively. Grid layout everywhere.",
+      "grid_modes": {
+        "marketing_sections": "Mode A: The Tetris Grid (Asymmetrical, gap-8 to gap-12)",
+        "dashboard_and_reviews": "Mode B: The Control Room Grid (Dense, gap-4 to gap-6, utilized 100%)"
+      },
+      "surface_styles": {
+        "cards": "Flat background, 1px solid border (border-zinc-200), NO shadow by default. Hover: shadow-sm and border-zinc-900.",
+        "radius": "Minimal roundness. rounded-none or rounded-md (4px) max. Avoid heavily rounded UI.",
+        "header": "Crystal Glass. bg-white/80 backdrop-blur-xl border-b border-zinc-200."
+      }
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-blue-600 text-white rounded-none font-semibold hover:bg-blue-700 transition-colors",
+        "secondary": "bg-transparent text-zinc-900 border border-zinc-200 rounded-none hover:border-zinc-900 transition-colors",
+        "outline": "border-2 border-zinc-900 text-zinc-900 rounded-none hover:bg-zinc-900 hover:text-white transition-colors"
+      },
+      "forms": {
+        "inputs": "bg-zinc-50 border border-zinc-200 rounded-none focus:ring-2 focus:ring-blue-600 focus:border-transparent text-zinc-900",
+        "labels": "text-sm font-semibold text-zinc-900 mb-1.5 block"
+      },
+      "badges": {
+        "verified": "bg-green-100 text-green-800 rounded-full px-2.5 py-0.5 text-xs font-semibold flex items-center gap-1",
+        "category": "bg-zinc-100 text-zinc-900 rounded-none px-2 py-1 text-xs font-semibold tracking-wide uppercase"
+      },
+      "star_rating": {
+        "icon": "lucide-react (Star)",
+        "filled": "text-blue-600 fill-blue-600",
+        "empty": "text-zinc-200 fill-zinc-200"
+      },
+      "review_card": {
+        "wrapper": "border-b border-zinc-200 py-8",
+        "header": "flex justify-between items-start mb-4",
+        "content": "text-zinc-700 leading-relaxed mb-4",
+        "footer": "flex gap-4 text-sm text-zinc-500"
+      }
+    },
+    "motion": {
+      "interactions": "Crisp and fast. hover:-translate-y-1 transform transition-all duration-200.",
+      "page_load": "Staggered fade-up for review lists and grid items.",
+      "accessibility": "Respect prefers-reduced-motion."
+    },
+    "assets": {
+      "icon_library": "lucide-react (default) OR @phosphor-icons/react for duotone technical look.",
+      "media": {
+        "user_avatars": [
+          {
+            "url": "https://images.unsplash.com/photo-1722894823658-b694a98cd7fa?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwzfHxwZW9wbGUlMjBkaXZlcnNlJTIwYXZhdGFycyUyMHBvcnRyYWl0c3xlbnwwfHx8fDE3Nzc0MzE3NTd8MA&ixlib=rb-4.1.0&q=85",
+            "description": "Diverse avatar 1"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1760893107446-58b108d419d8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHxwZW9wbGUlMjBkaXZlcnNlJTIwYXZhdGFycyUyMHBvcnRyYWl0c3xlbnwwfHx8fDE3Nzc0MzE3NTd8MA&ixlib=rb-4.1.0&q=85",
+            "description": "Diverse avatar 2"
+          },
+          {
+            "url": "https://images.pexels.com/photos/6693386/pexels-photo-6693386.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "description": "Diverse avatar 3"
+          }
+        ],
+        "companies": [
+          {
+            "url": "https://images.unsplash.com/photo-1763560956421-b3e4083e9fc9?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NzN8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjB0ZWNoJTIwY29tcGFueSUyMGJ1aWxkaW5nJTIwb2ZmaWNlfGVufDB8fHx8MTc3NzQzMTc1N3ww&ixlib=rb-4.1.0&q=85",
+            "description": "Modern company building exterior 1"
+          },
+          {
+            "url": "https://images.pexels.com/photos/9683980/pexels-photo-9683980.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "description": "Modern company building exterior 2"
+          }
+        ],
+        "entertainment": [
+          {
+            "url": "https://images.unsplash.com/photo-1723723467478-eb4667116137?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1NTJ8MHwxfHNlYXJjaHwzfHxtb3ZpZSUyMGNsYXBwZXJib2FyZCUyMGNpbmVtYSUyMHBvc3RlcnxlbnwwfHx8fDE3Nzc0MzE3NzF8MA&ixlib=rb-4.1.0&q=85",
+            "description": "Cinema Clapperboard"
+          },
+          {
+            "url": "https://images.pexels.com/photos/3137890/pexels-photo-3137890.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "description": "Movie Posters in hallway"
+          }
+        ],
+        "backgrounds": [
+          {
+            "url": "https://images.unsplash.com/photo-1766815868845-e80802957026?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMG1vZGVybiUyMGJhY2tncm91bmQlMjB0ZXh0dXJlJTIwbGlnaHR8ZW58MHx8fHwxNzc3NDMxNzcxfDA&ixlib=rb-4.1.0&q=85",
+            "description": "Soft light abstract texture"
+          },
+          {
+            "url": "https://images.unsplash.com/photo-1770745560263-a8fc696de90b?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxNzV8MHwxfHNlYXJjaHwxfHxhYnN0cmFjdCUyMG1vZGVybiUyMGJhY2tncm91bmQlMjB0ZXh0dXJlJTIwbGlnaHR8ZW58MHx8fHwxNzc3NDMxNzcxfDA&ixlib=rb-4.1.0&q=85",
+            "description": "Abstract black and white flowing fabric texture"
+          }
+        ]
+      }
+    },
+    "testing": {
+      "attributes": "All interactive/informational elements MUST include data-testid. Format: kebab-case, role-based. e.g., data-testid='submit-review-button'"
+    },
+    "instructions_to_main_agent": [
+      "DO NOT use Inter for headings. Include Cabinet Grotesk from fontshare or similar font API.",
+      "All media URLs provided MUST be used instead of placeholders. No dummyimage.com allowed.",
+      "Focus on stark contrast. Use the border-zinc-200 aggressively for structural separation.",
+      "The layout must feel like a high-end editorial tech site, not a cheap directory template.",
+      "Use Shadcn UI but aggressively strip the 'Vercel look' by applying rounded-none or rounded-sm and removing generic box shadows."
+    ]
+  }
+}
